@@ -30,11 +30,11 @@ I can't speak much to router config because that is going to be different depend
 
 Anyway, you're going to have to have a kind of weird conversation with your ISP for this to work out for you properly. I have comcast, so I was certain that all of the work I had done up to this point would be for naught.
 
-The conversation with your ISP is going to be something along the lines of, “I need to make my modem reachable from the internet. I am trying to set up a personal website for myself, it's going be like a personal documentation for my tech stuff, and I need to be able to access it when I am not at my house.” This gave the tech I was speaking with enough information about what I wanted to do, that they were able to change whatever settings on their end which then allowed you to be viewing this website right this very second! Crazy right?
+The conversation with your ISP is going to be something along the lines of, “I need to make my modem reachable from the internet. I am trying to set up a personal website for myself, it's going be like a personal documentation for my tech stuff, and I need to be able to access it when I am not at my house.” This gave the tech I was speaking with enough information about what I wanted to do, that they were able to change whatever settings on their end.
 
 Some ISP’s may not be so savvy to doing this to you if you don’t have a business account or something like that, as you could very well be opening their network up to various unsavory things in their opinion, like maybe one of those nasty, illegal file sharing websites…… Any who, your ISP isn’t going to appreciate heavy bandwidth usage, malware, or like, pretty much anything that you should damn well know better about anyway. We’ve already established that you’re smart, so you should already know not to be an unethical JA to the public in public. Things like these are a privilege, and if you need a refresher, check out [Kim Dotcom’s Wikipedia](https://en.wikipedia.org/wiki/Kim_Dotcom) page.
 
-After this conversation, if everything goes well at least, you should be able to access your pi \(if you set up SSH when you built it up\) through SSH from anywhere \(security risks be heeded\) and that makes dealing with configuration much easier. Also, now that your IP is open to incoming traffic, you can let your router do the work of firewall and network route translation. If you set everything up on your router properly, opened up ports 80 \(and 443 if you are using SSL,\) and set up some sort of configuration so that everything plays nicely… you should now be able to start trying to do your ngnix install if you haven’t already, and then the dreaded nginx configuration\(it’s seriously not so bad.. just keep your file syntax clean and ordered properly.\)
+After this conversation, if everything goes well at least, you should be able to access your pi \(if you set up SSH when you built it up\) through SSH from anywhere \(security risks be heeded\) and that makes dealing with configuration much easier. If you set everything up on your router properly,  you should now be able to start trying to do your ngnix install if you haven’t already, and then the dreaded nginx configuration\(it’s seriously not so bad.. just keep your file syntax clean and ordered properly.\)
 
 {% hint style="danger" %}
 #### IF YOU LEAVE PORT 22 OPEN TO THE OUTSIDE WORLD FOR PERSONAL SSH ACCESS, YOU \*WILL\* HAVE VAST AMOUNTS OF ATTEMPTS TO INVALIDATE THE SECURITY AND INTEGRITY OF YOUR SERVER SYSTEM.
@@ -115,7 +115,13 @@ Any time you make a change to this file, you need to run:
 so that the server will restart and use the new configurations you've just set.
 {% endhint %}
 
-### 5.\) Common mistakes and things to look for
+### 5.\) Accessing your Website
+
+Now, as long as your root folder has a index.html doc in it, if you navigate yourself to your browser and put in the domain name you purchased during step \#1, you should now be seeing the index.html page you wrote! Congratulations! You're now a happy owner of your very own personally hosted website. 
+
+**Great Job!** 
+
+#### Some common mistakes and things to look for
 
 Okay, now that I broke something again, I can write something here! So, in my course of making this website some form of wiki page dealio, I was attempting to install MediaWiki on my pi, which is going better now mind you.. but initially, while installing the whole LAMP set up, \(apache, php, mariaDB, \) it somehow made my ngnix no longer load.. then I swear I don’t know how I did it but I changed a few settings according to the media wiki nginx page and now for some reason, apache is now seamlessly serving my webpage. This is fascinating and I don’t know what is going on. I will continue to investigate and post back with fixes, but my current recommendation would be;
 
@@ -125,7 +131,7 @@ Okay, now that I broke something again, I can write something here! So, in my co
 TLDR: don’t install lamp after you set up nginx or you will have a head ache and be scared when your site is no longer reachable through nginx, with zero config setup on apache.
 {% endhint %}
 
-### 6.\) Helpful things to remember
+#### Helpful things to remember
 
 sudo everything, seriously. Linux 101 is not to just log in as root all the time. That’s technically stupid, so don’t do it. Just type sudo and use your most dope "46-h-j-45h\[3r'9h4g\]\[-f9'45?" password. **Don’t be silly,** _**hash your willy!**_
 
