@@ -1,23 +1,20 @@
 # About Me
 
-## Getting Super Powers
-
-Becoming a super hero is a fairly straight forward process:
-
 ```
-$ give me super-powers
+$ ./Hello.sh
 ```
+
+## Young n' Dumb
+
+I'm just a wannabe RedTeamer and bounty hunter with a love for data and computer security.  I find that I enjoy web development, scripting, digital forensics, and everything OPSEC and OSINT.
 
 {% hint style="danger" %}
- Super-powers are granted randomly so please submit an issue if you're not happy with yours.
+ I'm awful at everything listed previously, so beware if using any of my configs, programs, scripts, thoughts, words, ideas, or anything else attributed to me as I am and everything I touch is prone to failure at some point.
 {% endhint %}
 
-Once you're strong enough, save the world:
+I just have fun doing the stuff I do.  I just want to help people, explore stuff, learn things, and enjoy life.
 
+```bash
+apt install carefree-life
 ```
-// Ain't no code for that yet, sorry
-echo 'You got to trust me on this, I saved the world'
-```
-
-
 

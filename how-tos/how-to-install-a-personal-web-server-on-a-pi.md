@@ -11,7 +11,7 @@
 Got to go buy yourself a sweet domain name!!
 
 {% hint style="info" %}
- There are lots of places to buy domain names from, a few examples would be [domains.google.com](https://domains.google.com), [GoDaddy.com](https://www.godaddy.com), and [NameCheap.com](https://www.namecheap.com)
+There are lots of places to buy domain names from, a few examples would be [domains.google.com](https://domains.google.com), [GoDaddy.com](https://www.godaddy.com), and [NameCheap.com](https://www.namecheap.com)
 {% endhint %}
 
 ### 2.\) DNS settings
@@ -21,15 +21,7 @@ This one goes hand in hand with the router config and talking to your ISP.. your
 The security on this is debatable, as I haven’t audited a system running behind a private router before. I will probably be doing much more of that in the future and I will probably do a write up about interesting finds, so keep posted! I will attach links as they are generated…
 
 {% hint style="info" %}
-Have done some testing on my server since I first wrote this.  It is pretty well contained and I have yet to have any issues.
-{% endhint %}
-
-{% hint style="danger" %}
-#### IF YOU LEAVE PORT 22 OPEN TO THE OUTSIDE WORLD FOR PERSONAL SSH ACCESS, YOUR SERVER \*WILL\* HAVE A LARGE AMOUNT OF ATTEMPTS TO INVALIDATE THE SECURITY AND INTEGRITY OF YOUR SERVER SYSTEM.  
-{% endhint %}
-
-{% hint style="info" %}
-I would at least recommend changing your root/pi account name/password to something more difficult for people to brute force. There are many other ways to protect your outward facing servers from unauthorized access, but a complicated password and none default username will go extremely far in your successful hardening of your server.
+Have done some testing on my server since I first wrote this. It is pretty well contained and I have yet to have any issues.
 {% endhint %}
 
 ### 3.\) Router Config + ISP info
@@ -43,6 +35,14 @@ The conversation with your ISP is going to be something along the lines of, “I
 Some ISP’s may not be so savvy to doing this to you if you don’t have a business account or something like that, as you could very well be opening their network up to various unsavory things in their opinion, like maybe one of those nasty, illegal file sharing websites…… Any who, your ISP isn’t going to appreciate heavy bandwidth usage, malware, or like, pretty much anything that you should damn well know better about anyway. We’ve already established that you’re smart, so you should already know not to be an unethical JA to the public in public. Things like these are a privilege, and if you need a refresher, check out [Kim Dotcom’s Wikipedia](https://en.wikipedia.org/wiki/Kim_Dotcom) page.
 
 After this conversation, if everything goes well at least, you should be able to access your pi \(if you set up SSH when you built it up\) through SSH from anywhere \(security risks be heeded\) and that makes dealing with configuration much easier. Also, now that your IP is open to incoming traffic, you can let your router do the work of firewall and network route translation. If you set everything up on your router properly, opened up ports 80 \(and 443 if you are using SSL,\) and set up some sort of configuration so that everything plays nicely… you should now be able to start trying to do your ngnix install if you haven’t already, and then the dreaded nginx configuration\(it’s seriously not so bad.. just keep your file syntax clean and ordered properly.\)
+
+{% hint style="danger" %}
+#### IF YOU LEAVE PORT 22 OPEN TO THE OUTSIDE WORLD FOR PERSONAL SSH ACCESS, YOU \*WILL\* HAVE VAST AMOUNTS OF ATTEMPTS TO INVALIDATE THE SECURITY AND INTEGRITY OF YOUR SERVER SYSTEM.
+{% endhint %}
+
+{% hint style="info" %}
+I would at least recommend changing your root/pi account name/password to something more difficult for people to brute force. There are many other ways to protect your outward facing servers from unauthorized access, but a complicated password and none default username will go extremely far in your successful hardening of your server.
+{% endhint %}
 
 ### 4.\) Nginx install and config files
 
@@ -100,7 +100,7 @@ server {
     # include the fastcgi_param setting
     include fastcgi_params;
   }
-  
+
   location / {
           try_files $uri $uri/ /index.html =404;
   }
@@ -117,11 +117,15 @@ so that the server will restart and use the new configurations you've just set.
 
 ### 5.\) Common mistakes and things to look for
 
-Okay, now that I broke something again, I can write something here! So, in my course of making this website some form of wiki page dealio, I was attempting to install MediaWiki on my pi, which is going better now mind you.. but initially, while installing the whole LAMP set up, \(apache, php, mariaDB, \) it somehow made my ngnix no longer load.. then I swear I don’t know how I did it but I changed a few settings according to the media wiki nginx page and now for some reason, apache is now seamlessly serving my webpage. This is fascinating and I don’t know what is going on. I will continue to investigate and post back with fixes, but my current recommendation would be “if you don’t know what you are doing, just stick with NGINX and some html5 and CSS. Im sure you could code a decent enough ‘wiki’ styled html page with some CSS help.”
+Okay, now that I broke something again, I can write something here! So, in my course of making this website some form of wiki page dealio, I was attempting to install MediaWiki on my pi, which is going better now mind you.. but initially, while installing the whole LAMP set up, \(apache, php, mariaDB, \) it somehow made my ngnix no longer load.. then I swear I don’t know how I did it but I changed a few settings according to the media wiki nginx page and now for some reason, apache is now seamlessly serving my webpage. This is fascinating and I don’t know what is going on. I will continue to investigate and post back with fixes, but my current recommendation would be;
 
+> “if you don’t know what you are doing, just stick with NGINX and some HTML and CSS. I'm sure you could code a decent enough ‘wiki’ styled html page with some CSS help.”
+
+{% hint style="success" %}
 TLDR: don’t install lamp after you set up nginx or you will have a head ache and be scared when your site is no longer reachable through nginx, with zero config setup on apache.
+{% endhint %}
 
 ### 6.\) Helpful things to remember
 
-sudo everything, seriously. Linux 101 is not to just log in as root all the time. That’s technically stupid, so don’t do it. Just type sudo and use your epically drafted password. **Don’t be silly,** _**hash your willy!**_
+sudo everything, seriously. Linux 101 is not to just log in as root all the time. That’s technically stupid, so don’t do it. Just type sudo and use your most dope "46-h-j-45h\[3r'9h4g\]\[-f9'45?" password. **Don’t be silly,** _**hash your willy!**_
 
