@@ -1,5 +1,5 @@
 # Installing a Personal Web Server on a Pi
-<!-- toc -->
+
 ## Couple prerequisites before we even can start on the config:
 
 * Raspberry Pi 3+
