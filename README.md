@@ -1,4 +1,4 @@
-# Welcome to my Wiki Pages
+# Wiki HomePage
 
 ## I hope you don't hurt yourself while you're here, and also that you enjoy your time.
 
