@@ -1,5 +1,7 @@
 # Installing a Personal Web Server on a Pi
 
+Most recently, I have installed CENTOS7 and httpd on my pi, which is what is currently hosting my html site. I'll do an updated doc soon for that.
+
 ## Couple prerequisites before we even can start on the config:
 
 * Raspberry Pi 3+
