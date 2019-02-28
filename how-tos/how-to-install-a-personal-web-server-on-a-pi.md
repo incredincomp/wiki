@@ -36,7 +36,7 @@ The conversation with your ISP is going to be something along the lines of, “I
 
 Some ISP’s may not be so savvy to doing this to you if you don’t have a business account or something like that, as you could very well be opening their network up to various unsavory things in their opinion, like maybe one of those nasty, illegal file sharing websites…… Any who, your ISP isn’t going to appreciate heavy bandwidth usage, malware, or like, pretty much anything that you should damn well know better about anyway. We’ve already established that you’re smart, so you should already know not to be an unethical JA to the public in public. Things like these are a privilege, and if you need a refresher, check out [Kim Dotcom’s Wikipedia](https://en.wikipedia.org/wiki/Kim_Dotcom) page.
 
-After this conversation, if everything goes well at least, you should be able to access your pi \(if you set up SSH when you built it up\) through SSH from anywhere \(security risks be heeded\) and that makes dealing with configuration much easier. If you set everything up on your router properly,  you should now be able to start trying to do your ngnix install if you haven’t already, and then the dreaded nginx configuration\(it’s seriously not so bad.. just keep your file syntax clean and ordered properly.\)
+After this conversation, if everything goes well at least, you should be able to access your pi \(if you set up SSH when you built it up\) through SSH from anywhere \(security risks be heeded\) and that makes dealing with configuration much easier. If you set everything up on your router properly, you should now be able to start trying to do your ngnix install if you haven’t already, and then the dreaded nginx configuration\(it’s seriously not so bad.. just keep your file syntax clean and ordered properly.\)
 
 {% hint style="danger" %}
 #### IF YOU LEAVE PORT 22 OPEN TO THE OUTSIDE WORLD FOR PERSONAL SSH ACCESS, YOU \*WILL\* HAVE VAST AMOUNTS OF ATTEMPTS TO INVALIDATE THE SECURITY AND INTEGRITY OF YOUR SERVER SYSTEM.
@@ -119,9 +119,9 @@ so that the server will restart and use the new configurations you've just set.
 
 ### 5.\) Accessing your Website
 
-Now, as long as your root folder has a index.html doc in it, if you navigate yourself to your browser and put in the domain name you purchased during step \#1, you should now be seeing the index.html page you wrote! Congratulations! You're now a happy owner of your very own personally hosted website. 
+Now, as long as your root folder has a index.html doc in it, if you navigate yourself to your browser and put in the domain name you purchased during step \#1, you should now be seeing the index.html page you wrote! Congratulations! You're now a happy owner of your very own personally hosted website.
 
-**Great Job!** 
+**Great Job!**
 
 #### Some common mistakes and things to look for
 
