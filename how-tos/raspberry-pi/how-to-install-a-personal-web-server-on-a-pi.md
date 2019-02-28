@@ -1,4 +1,4 @@
-# Installing a Personal Web Server on a Pi
+# Personal Website on Raspbian
 
 Most recently, I have installed CENTOS7 and httpd on my pi, which is what is currently hosting my html site. I'll do an updated doc soon for that.
 

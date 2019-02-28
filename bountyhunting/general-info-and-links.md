@@ -1,0 +1,21 @@
+---
+description: >-
+  Just a list of links and some information to help you get introduced and
+  integrated with the bug bounty community.
+---
+
+# General Info and Links
+
+## What are bug bounties?
+
+COMPANIES PAY YOU TO BREAK THEIR PRIZED POSSESSIONS. Then you have to write an epic write up about it and provide a POC \(Proof of Concept,\) and if you'd be so kind as to provide some advice on how to mediate the risk you exploited, companies are much more likely to give you an extra pat on the back.
+
+## Where do I get involved?
+
+* [Bugcrowd Program List](https://bugcrowd.com/programs)
+* [Internet Bug Bounty](https://www.hackerone.com/internet-bug-bounty) brought to you by [hackerone](https://www.hackerone.com/) - Bug Bounties focused on some of the most important software that supports the internet stack. [This is a doc from hackerone](https://docs.hackerone.com/hackers.html) about their bug bounty programs and hacking in general
+
+## Where/How do I practice Web Application Vulnerability Testing?
+
+* [VULNHUB.com](https://www.vulnhub.com/) has the coolest collection of vulnerable virtual machines for all of your penetration testings needs.
+
