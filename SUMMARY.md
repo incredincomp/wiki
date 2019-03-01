@@ -19,6 +19,7 @@
 
 ## Various Resources
 
+* [Various Resources That Fit No Where Else](various-resources/various-resources-that-fit-no-where-else.md)
 * [Hidden](various-resources/untitled/README.md)
   * [Untitled](various-resources/untitled/untitled/README.md)
     * [Untitled](various-resources/untitled/untitled/untitled/README.md)
