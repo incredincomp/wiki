@@ -28,3 +28,7 @@
       * [Untitled](various-resources/untitled/untitled/untitled/untitled/README.md)
         * [Untitled](various-resources/untitled/untitled/untitled/untitled/untitled.md)
 
+## Things to Share with Whomever
+
+* [Failed Access Logs From My CentOS 7 Server](things-to-share-with-whomever/failed-access-logs-from-my-centos-7-server.md)
+
