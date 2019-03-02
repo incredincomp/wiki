@@ -8,6 +8,7 @@
 * [Raspberry Pi](how-tos/raspberry-pi/README.md)
   * [Personal Website on Raspbian](how-tos/raspberry-pi/how-to-install-a-personal-web-server-on-a-pi.md)
   * [Installing CentOS 7 and httpd on Raspberry Pi 3](how-tos/raspberry-pi/installing-centos-7-and-httpd-on-raspberry-pi-3.md)
+  * [EPEL and fail2ban Install for PI 3](how-tos/raspberry-pi/epel-and-fail2ban-install-for-pi-3.md)
 
 ## \#BountyHunting
 
