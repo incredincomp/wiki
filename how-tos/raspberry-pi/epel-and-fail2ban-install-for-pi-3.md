@@ -40,3 +40,10 @@ yum install fail2ban
 I haven't done any configuration yet but as I accomplish more, I will keep updating things.
 {% endhint %}
 
+## Start fail2ban
+
+```text
+systemctl enable fail2ban
+systemctl start fail2ban
+```
+
