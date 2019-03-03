@@ -10,19 +10,19 @@ description: >-
 Make sure your build is as updated as a CentOS distro can be, for whatever that is worth!
 {% endhint %}
 
-```text
+```bash
 sudo yum update
 ```
 
 ## Add the ARM7/EPEL repo to your /etc/yum.repos.d directory
 
-```text
+```bash
 vim /etc/yum.repos.d/epel.repo
 ```
 
 Add the following information, taken from [CentOS.org](https://wiki.centos.org/SpecialInterestGroup/AltArch/armhfp?action=show&redirect=SpecialInterestGroup%2FAltArch%2FArm32#head-f2a772703b3caa90cc284e01bc87423ce9a87bcd)
 
-```text
+```bash
 [epel]
 name=Epel rebuild for armhfp
 baseurl=https://armv7.dev.centos.org/repodir/epel-pass-1/
@@ -32,7 +32,7 @@ gpgcheck=0
 
 ## Now install Fail2Ban
 
-```text
+```bash
 yum install fail2ban
 ```
 
@@ -42,7 +42,7 @@ I haven't done any configuration yet but as I accomplish more, I will keep updat
 
 ## Start fail2ban
 
-```text
+```bash
 systemctl enable fail2ban
 systemctl start fail2ban
 ```

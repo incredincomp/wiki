@@ -14,7 +14,7 @@ description: >-
 
 1.  `fail2ban.conf` contains the default configuration profile. The default settings will give you a reasonable working setup. If you want to make any changes, it’s best to do it in a separate file, `fail2ban.local`, which overrides `fail2ban.conf`. Rename a copy `fail2ban.conf` to `fail2ban.local`.
 
-```text
+```bash
 cp /etc/fail2ban/fail2ban.conf /etc/fail2ban/fail2ban.local
 ```
 
@@ -39,14 +39,14 @@ cp /etc/fail2ban/fail2ban.conf /etc/fail2ban/fail2ban.local
 
 By default, fail2ban does not enable ssh for CentOS so we need to make some changes to the `jail.conf` file.
 
-```text
+```bash
 cp /etc/fail2ban/jail.conf /etc/fail2ban/jail.local
 vim /etc/fail2ban/jail.local
 ```
 
 We first need to change the backend option in jail.local from auto to systemd.
 
-```text
+```bash
 backend = systemd
 ```
 
@@ -56,7 +56,7 @@ No jails are enabed by default on CentOS7.
 
 To enable your ssh daemon jail, uncomment the following lines:
 
-```text
+```bash
 [sshd]
 enabled = true
 ```
@@ -65,7 +65,7 @@ enabled = true
 
 To ignore your own IP so that you don't accidentally jail your own self:
 
-```text
+```bash
 [DEFAULT]
 
 # "ignoreip" can be an IP address, a CIDR mask or a DNS host. Fail2ban will not
@@ -78,13 +78,13 @@ ignoreip = 127.0.0.1/8 123.45.67.89
  If you wish to whitelist IPs only for certain jails, this can be done with the `fail2ban-client` command. Replace `JAIL` with the name of your jail, and `123.45.67.89` with the IP you wish to whitelist.
 {% endhint %}
 
-```text
+```bash
 fail2ban-client set JAIL addignoreip 123.45.67.89
 ```
 
 ### Ban Times and Retry Amount
 
-```text
+```bash
 # "bantime" is the number of seconds that a host is banned.
 bantime  = 600
 
@@ -102,7 +102,7 @@ maxretry = 3
 
 ### Other Jail Config Settings
 
-```text
+```bash
 [ssh]
 
 enabled  = true
@@ -154,7 +154,7 @@ If you fancy a personal filter for yourself, fail2ban accepts pythons [Regular E
 
 Where "SERVICE" is the name of the service you made your regex for.
 
-```text
+```bash
 # Fail2Ban filter for SERVICE
 #
 #
@@ -167,7 +167,7 @@ ignoreregex =
 
 Add a SERVICE section to `jail.local`
 
-```text
+```bash
 [SERVICE]
 enabled  = true
 filter   = SERVICE
