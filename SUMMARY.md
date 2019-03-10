@@ -22,7 +22,8 @@
 
 ## Various Resources
 
-* [Various Resources That Fit No Where Else](various-resources/various-resources-that-fit-no-where-else.md)
+* [Various Resources That Fit No Where Else](various-resources/various-resources-that-fit-no-where-else/README.md)
+  * [Security Testing Methodologies and Steps](various-resources/various-resources-that-fit-no-where-else/security-testing-methodologies-and-steps.md)
 * [Hidden](various-resources/untitled/README.md)
   * [Untitled](various-resources/untitled/untitled/README.md)
     * [Untitled](various-resources/untitled/untitled/untitled/README.md)
