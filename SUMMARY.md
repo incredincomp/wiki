@@ -3,7 +3,7 @@
 * [Wiki HomePage](README.md)
 * [About Me](about-me.md)
 
-## How-To's
+## \#How-To's
 
 * [Raspberry Pi](how-tos/raspberry-pi/README.md)
   * [fail2ban Configuration on CentOS7](how-tos/raspberry-pi/fail2ban-configuration-on-centos7.md)
@@ -16,7 +16,7 @@
 
 * [General Info and Links](bountyhunting/general-info-and-links.md)
 
-## CTF
+## \#CTF
 
 * [General Info and Links](ctf/untitled.md)
 
@@ -33,4 +33,8 @@
 ## Things to Share with Whomever
 
 * [Failed Access Logs From My CentOS 7 Server](things-to-share-with-whomever/failed-access-logs-from-my-centos-7-server.md)
+
+## Cheat-Sheets
+
+* [nmap](cheat-sheets/nmap.md)
 
