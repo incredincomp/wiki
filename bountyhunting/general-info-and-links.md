@@ -14,6 +14,7 @@ COMPANIES PAY YOU TO BREAK THEIR PRIZED POSSESSIONS. Then you have to write an e
 
 * [OWASP Mobile Security Testing Guide \(MSTG\)](https://github.com/OWASP/owasp-mstg)
 * [Testing for SQL Injection \(OTG-INPVAL-005\)](https://www.owasp.org/index.php/Testing_for_SQL_Injection_%28OTG-INPVAL-005%29)
+* [OWASP XSS Filter Evasion Cheat Sheet](https://www.owasp.org/index.php/XSS_Filter_Evasion_Cheat_Sheet)
 
 ## Where do I get involved?
 
