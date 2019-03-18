@@ -16,5 +16,5 @@
 
 ### How-To's
 
-* Fixing Grub boot issue
+* [Fixing Grub Boot Issue](fixing-grub-boot-issue.md)
 
