@@ -5,7 +5,7 @@
 
 ## \#How-To's
 
-* [Kali Linux 2019.1](how-tos/kali-linux-2019.1/README.md)
+* [Kali Linux 2019](how-tos/kali-linux-2019.1/README.md)
   * [Fixing Grub Boot Issue](how-tos/kali-linux-2019.1/fixing-grub-boot-issue.md)
 * [Raspberry Pi](how-tos/raspberry-pi/README.md)
   * [CentOS 7](how-tos/raspberry-pi/centos-7/README.md)
