@@ -43,7 +43,7 @@ After this conversation, if everything goes well at least, you should be able to
 {% endhint %}
 
 {% hint style="info" %}
-I would at least recommend changing your root/pi account name/password to something more difficult for people to brute force. There are many other ways to protect your outward facing servers from unauthorized access, but a complicated password and none default username will go extremely far in your successful hardening of your server.
+I would at least recommend changing your root/pi account name/password to something more difficult for people to brute force. There are many other ways to protect your outward facing servers from unauthorized access, but a complicated password will go extremely far in your successful hardening of your server.
 {% endhint %}
 
 ### 4.\) Nginx install and config files
@@ -62,7 +62,9 @@ $ sudo nginx -v
 $ nginx version: nginx/1.10.3
 ```
 
-So my old how to isnt really relevant with new nginx as the sites-available and sites-enabled directories are no longer included in the install. I just make them myself now because I am so used to it but I am not sure that is needed. That being said, without them, I do not know how nginx understands what it is supposed to do. Meh.
+{% hint style="danger" %}
+So, my old how-to isn't really relevant with new nginx as the sites-available and sites-enabled directories are no longer included in the install. I just make them myself now because I am so used to it but I am not sure that is needed. That being said, without them, I do not know how nginx understands what it is supposed to do. Meh.
+{% endhint %}
 
 #### This is how I had my nginx.conf file set up before the great collapse
 

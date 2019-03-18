@@ -18,6 +18,3 @@ apt install carefree-life
 
 > I just have fun doing the stuff I do.  I just want to help people, explore stuff, learn things, and enjoy life.
 
----
-showTOC: true
----
