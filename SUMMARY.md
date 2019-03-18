@@ -5,6 +5,8 @@
 
 ## \#How-To's
 
+* [Kali Linux 2019.1](how-tos/kali-linux-2019.1/README.md)
+  * [Fixing Grub Boot Issue](how-tos/kali-linux-2019.1/fixing-grub-boot-issue.md)
 * [Raspberry Pi](how-tos/raspberry-pi/README.md)
   * [fail2ban Configuration on CentOS7](how-tos/raspberry-pi/fail2ban-configuration-on-centos7.md)
   * [EPEL and fail2ban Install for PI 3](how-tos/raspberry-pi/epel-and-fail2ban-install-for-pi-3.md)

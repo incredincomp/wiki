@@ -15,6 +15,7 @@ COMPANIES PAY YOU TO BREAK THEIR PRIZED POSSESSIONS. Then you have to write an e
 * [OWASP Mobile Security Testing Guide \(MSTG\)](https://github.com/OWASP/owasp-mstg)
 * [Testing for SQL Injection \(OTG-INPVAL-005\)](https://www.owasp.org/index.php/Testing_for_SQL_Injection_%28OTG-INPVAL-005%29)
 * [OWASP XSS Filter Evasion Cheat Sheet](https://www.owasp.org/index.php/XSS_Filter_Evasion_Cheat_Sheet)
+* [XSS and Authorization - hacker101.com](https://www.hacker101.com/sessions/xss)
 
 ## Where do I get involved?
 
@@ -24,4 +25,5 @@ COMPANIES PAY YOU TO BREAK THEIR PRIZED POSSESSIONS. Then you have to write an e
 ## Where/How do I practice Web Application Vulnerability Testing?
 
 * [VULNHUB.com](https://www.vulnhub.com/) has the coolest collection of vulnerable virtual machines for all of your penetration testings needs.
+* [unscape\(\) room](https://unescape-room.jobertabma.nl/) - XSS learning game, each challenge is made up of a template, function, value, and a number of filters. It is up to you to find a payload that bypasses all filters so it executes the function with the expected argument.
 
