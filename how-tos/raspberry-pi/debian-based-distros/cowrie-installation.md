@@ -1,20 +1,21 @@
 # Cowrie Installation
 
-BORROWED FROM https://cowrie.readthedocs.io/en/latest/INSTALL.html
+[(BORROWED FROM https://cowrie.readthedocs.io/en/latest/INSTALL.html)]
 
 Installing Cowrie in seven steps.
-[Step 1: Install dependencies](#step-1-install-dependencies)
-[Step 2: Create a user account](#step-2-create-a-user-account)
-[Step 3: Checkout the code](#step-3-checkout-the-code)
-[Step 4: Setup Virtual Environment](#step-4-setup-virtual-environment)
-[Step 5: Install configuration file](#step-5-install-configuration-file)
-[Step 6: Generate a DSA key (OPTIONAL)](#step-6-generate-a-dsa-key)
-[Step 7: Starting Cowrie](#step-7-turning-on-cowrie)
-[Step 8: Port redirection (OPTIONAL)](#step-8-port-redirection-optional)
-[Running within supervisord (OPTIONAL)](#running-using-supervisord)
-[Configure Additional Output Plugins (OPTIONAL)](#configure-additional-output-plugins-optional)
-[Troubleshooting](#troubleshooting)
-Step 1: Install dependencies
+*[Step 1: Install dependencies](#step-1-install-dependencies)
+*[Step 2: Create a user account](#step-2-create-a-user-account)
+*[Step 3: Checkout the code](#step-3-checkout-the-code)
+*[Step 4: Setup Virtual Environment](#step-4-setup-virtual-environment)
+*[Step 5: Install configuration file](#step-5-install-configuration-file)
+*[Step 6: Generate a DSA key (OPTIONAL)](#step-6-generate-a-dsa-key)
+*[Step 7: Starting Cowrie](#step-7-turning-on-cowrie)
+*[Step 8: Port redirection (OPTIONAL)](#step-8-port-redirection-optional)
+*[Running within supervisord (OPTIONAL)](#running-using-supervisord)
+*[Configure Additional Output Plugins (OPTIONAL)](#configure-additional-output-plugins-optional)
+*[Troubleshooting](#troubleshooting)
+
+##Step 1: Install dependencies
 First we install system-wide support for Python virtual environments and other dependencies. Actual Python packages are installed later.
 
 On Debian based systems (last verified on Debian 9, 2017-07-25): For a Python3 based environment:
@@ -23,7 +24,8 @@ $ sudo apt-get install git python-virtualenv libssl-dev libffi-dev build-essenti
 Or for Python2:
 
 $ sudo apt-get install git python-virtualenv libssl-dev libffi-dev build-essential libpython-dev python2.7-minimal authbind
-Step 2: Create a user account
+
+## Step 2: Create a user account
 It’s strongly recommended to run with a dedicated non-root user id:
 
 $ sudo adduser --disabled-password cowrie
@@ -40,7 +42,8 @@ Other []:
 Is the information correct? [Y/n]
 
 $ sudo su - cowrie
-Step 3: Checkout the code
+
+## Step 3: Checkout the code
 Check out the code:
 
 $ git clone http://github.com/cowrie/cowrie
@@ -128,7 +131,7 @@ Or use setcap to give permissions to Python to listen on ports<1024:
 $ setcap cap_net_bind_service=+ep /usr/bin/python2.7
 And change the listening ports in cowrie.cfg as above.
 
-Running using Supervisord (OPTIONAL)
+##Running using Supervisord (OPTIONAL)
 On Debian, put the below in /etc/supervisor/conf.d/cowrie.conf:
 
 [program:cowrie]
@@ -154,14 +157,14 @@ Splunk
 SQL (MySQL, SQLite3, RethinkDB)
 See ~/cowrie/docs/[Output Plugin]/README.rst for details.
 
-Troubleshooting
+##Troubleshooting
 If you see twistd: Unknown command: cowrie there are two
 possibilities. If there’s a Python stack trace, it probably means there’s a missing or broken dependency. If there’s no stack trace, double check that your PYTHONPATH is set to the source code directory.
 Default file permissions
 
 To make Cowrie logfiles public readable, change the --umask 0077 option in start.sh into --umask 0022
 
-Updating Cowrie
+##Updating Cowrie
 Updating is an easy process. First stop your honeypot. Then fetch updates from GitHub, and upgrade your Python dependencies:
 
 bin/cowrie stop
@@ -173,5 +176,6 @@ pip install --upgrade -r requirements-output.txt
 And finally, start Cowrie back up after finishing all updates:
 
 bin/cowrie start
-Modifying Cowrie
+
+##Modifying Cowrie
 The pre-login banner can be set by creating the file honeyfs/etc/issue.net. The post-login banner can be customized by editing honeyfs/etc/motd.
