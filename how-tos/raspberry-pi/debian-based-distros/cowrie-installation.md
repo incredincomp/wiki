@@ -3,19 +3,8 @@
 [(BORROWED FROM https://cowrie.readthedocs.io/en/latest/INSTALL.html)]
 
 Installing Cowrie in seven steps.
-*[Step 1: Install dependencies](#step-1-install-dependencies)
-*[Step 2: Create a user account](#step-2-create-a-user-account)
-*[Step 3: Checkout the code](#step-3-checkout-the-code)
-*[Step 4: Setup Virtual Environment](#step-4-setup-virtual-environment)
-*[Step 5: Install configuration file](#step-5-install-configuration-file)
-*[Step 6: Generate a DSA key (OPTIONAL)](#step-6-generate-a-dsa-key)
-*[Step 7: Starting Cowrie](#step-7-turning-on-cowrie)
-*[Step 8: Port redirection (OPTIONAL)](#step-8-port-redirection-optional)
-*[Running within supervisord (OPTIONAL)](#running-using-supervisord)
-*[Configure Additional Output Plugins (OPTIONAL)](#configure-additional-output-plugins-optional)
-*[Troubleshooting](#troubleshooting)
 
-##Step 1: Install dependencies
+## Step 1: Install dependencies
 First we install system-wide support for Python virtual environments and other dependencies. Actual Python packages are installed later.
 
 On Debian based systems (last verified on Debian 9, 2017-07-25): For a Python3 based environment:
