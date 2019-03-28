@@ -15,6 +15,7 @@
     * [Installing Cowrie SSH  HoneyPot on Cent OS 7 armv7](how-tos/raspberry-pi/centos-7/installing-cowrie-ssh-honeypot-on-cent-os-7-armv7.md)
   * [Debian Based Distro's](how-tos/raspberry-pi/debian-based-distros/README.md)
     * [Nginx Server on ARM Ubuntu](how-tos/raspberry-pi/debian-based-distros/nginx-server-on-arm-ubuntu.md)
+    * [Cowrie Installation](how-tos/raspberry-pi/debian-based-distros/cowrie-installation.md)
     * [Personal Website on Raspbian](how-tos/raspberry-pi/debian-based-distros/how-to-install-a-personal-web-server-on-a-pi.md)
 
 ## Cheat-Sheets

@@ -11,7 +11,6 @@ description: >-
   * [EPEL and fail2ban Install for Pi 3](centos-7/epel-and-fail2ban-install-for-pi-3/)
     * [fail2ban Configuration on CentOS 7](centos-7/epel-and-fail2ban-install-for-pi-3/fail2ban-configuration-on-centos7.md)
   * [Installing Cowrie SSH HoneyPot on CentOS 7 armv7](centos-7/installing-cowrie-ssh-honeypot-on-cent-os-7-armv7.md)
----
 * [Debian Based Distro's](debian-based-distros/)
   * [Host your Personal Website on Raspbian](debian-based-distros/how-to-install-a-personal-web-server-on-a-pi.md)
 
