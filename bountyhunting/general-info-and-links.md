@@ -16,6 +16,7 @@ COMPANIES PAY YOU TO BREAK THEIR PRIZED POSSESSIONS. Then you have to write an e
 * [Testing for SQL Injection \(OTG-INPVAL-005\)](https://www.owasp.org/index.php/Testing_for_SQL_Injection_%28OTG-INPVAL-005%29)
 * [OWASP XSS Filter Evasion Cheat Sheet](https://www.owasp.org/index.php/XSS_Filter_Evasion_Cheat_Sheet)
 * [XSS and Authorization - hacker101.com](https://www.hacker101.com/sessions/xss)
+* [LevelUp Videos - Recon Techniques - BugCrowd](https://forum.bugcrowd.com/t/levelup-videos-recon-techniques/4912)
 
 ## Where do I get involved?
 
