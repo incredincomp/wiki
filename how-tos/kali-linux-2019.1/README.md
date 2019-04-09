@@ -5,6 +5,9 @@
 {% embed url="https://www.Kali.org" %}
 
 ### Metasploit Updates
+
+{% embed url="https://www.rapid7.com/products/metasploit/" %}
+
 ### New in 5.0.15
 
 
