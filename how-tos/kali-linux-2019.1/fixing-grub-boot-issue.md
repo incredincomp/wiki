@@ -32,7 +32,7 @@ Device              Start        End   Sectors   Size Type
 /dev/nvme0n1p6 1000212480 1000214527      2048     1M Linux swap
 ```
 
-As you can see here at Line 2, my `nvme0n1 = NVMEX` .  On lines 10-\* of your own system, you will find all of the information that will help you fix your drive and regain control of your system kernel. 
+As you can see here at Line 2, my `nvme0n1 = NVMEX` and that is the name of my entire disk.  On lines 10-\* of your own system, you will find all of the information that will help you fix your drive and regain control of your system kernel. 
 
 {% hint style="info" %}
 Keep the output from the previous command handy for this next step.
@@ -52,6 +52,8 @@ Keep the output from the previous command handy for this next step.
 {% hint style="info" %}
 nvme\* = whole disk \| nvme\*\* = efi partition \| nvme\*\*\* = system partition 
 {% endhint %}
+
+`quit` - drop yourself out of chroot
 
 `sudo reboot` and you should now be able to access the GRUB menu from your boot load screen. Happy hackin'!
 
